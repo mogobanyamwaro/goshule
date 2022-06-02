@@ -5,6 +5,7 @@
     "backend-auth": "libs/backend/auth",
     "backend-blog": "libs/backend/blog",
     "backend-core": "libs/backend/core",
+    "backend-decorators": "libs/backend/decorators",
     "backend-dtos": "libs/backend/dtos",
     "backend-entities": "libs/backend/entities",
     "backend-enums": "libs/backend/enums",

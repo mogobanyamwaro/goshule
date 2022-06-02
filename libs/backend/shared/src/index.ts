@@ -1,1 +1,1 @@
-export * from './lib/backend-shared.module';
+export * from './lib';

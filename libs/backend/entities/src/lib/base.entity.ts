@@ -1,14 +1,18 @@
 import {
   Entity,
   BaseEntity as Base,
-  PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
+  PrimaryColumn,
+  BeforeInsert,
 } from 'typeorm';
+import { v4 } from 'uuid';
 
 @Entity()
 export abstract class BaseEntity extends Base {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryColumn('varchar', {
+    length: 50,
+  })
   id: string;
 
   @CreateDateColumn({
@@ -20,4 +24,8 @@ export abstract class BaseEntity extends Base {
     name: 'updated_at',
   })
   updatedAt: Date;
+  @BeforeInsert()
+  addId() {
+    this.id = v4();
+  }
 }

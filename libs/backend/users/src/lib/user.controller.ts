@@ -1,6 +1,17 @@
+import { AuthUser } from '@go-shule/backend/decorators';
 import { CreateUserInput } from '@go-shule/backend/dtos';
-import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
-import { ApiTags, ApiOperation, ApiBody } from '@nestjs/swagger';
+import { User } from '@go-shule/backend/entities';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  UseGuards,
+} from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
+import { ApiTags, ApiOperation, ApiBody, ApiBearerAuth } from '@nestjs/swagger';
 import { UserService } from './user.service';
 @Controller('users')
 @ApiTags('users')
@@ -14,10 +25,12 @@ export class UserController {
     return this.userService.createUser(input);
   }
 
-  @Get('me/:id')
+  @Get('me')
   @ApiOperation({ summary: 'Get current user' })
-  async getMe(@Param('id') id: string) {
-    return this.userService.findOneById(id);
+  @ApiBearerAuth()
+  @UseGuards(AuthGuard('jwt'))
+  async getMe(@AuthUser() user: User) {
+    return this.userService.findOneById(user.id);
   }
 
   @Get('all')

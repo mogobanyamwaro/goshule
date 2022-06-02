@@ -14,7 +14,20 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@go-shule/backend/auth": ["libs/backend/auth/src/index.ts"],
+      "@go-shule/backend/blog": ["libs/backend/blog/src/index.ts"],
+      "@go-shule/backend/core": ["libs/backend/core/src/index.ts"],
+      "@go-shule/backend/dtos": ["libs/backend/dtos/src/index.ts"],
+      "@go-shule/backend/entities": ["libs/backend/entities/src/index.ts"],
+      "@go-shule/backend/enums": ["libs/backend/enums/src/index.ts"],
+      "@go-shule/backend/payments": ["libs/backend/payments/src/index.ts"],
+      "@go-shule/backend/products": ["libs/backend/products/src/index.ts"],
+      "@go-shule/backend/rating": ["libs/backend/rating/src/index.ts"],
+      "@go-shule/backend/shared": ["libs/backend/shared/src/index.ts"],
+      "@go-shule/backend/upload": ["libs/backend/upload/src/index.ts"],
+      "@go-shule/backend/users": ["libs/backend/users/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

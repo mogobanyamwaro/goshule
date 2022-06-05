@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'backend-products',
+  displayName: 'backend-e-commerce',
   preset: '../../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -12,5 +12,5 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../coverage/libs/backend/products',
+  coverageDirectory: '../../../coverage/libs/backend/e-commerce',
 };

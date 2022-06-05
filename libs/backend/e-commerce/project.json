@@ -1,20 +1,20 @@
 {
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/backend/products/src",
+  "sourceRoot": "libs/backend/e-commerce/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/backend/products/**/*.ts"]
+        "lintFilePatterns": ["libs/backend/e-commerce/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/backend/products"],
+      "outputs": ["coverage/libs/backend/e-commerce"],
       "options": {
-        "jestConfig": "libs/backend/products/jest.config.ts",
+        "jestConfig": "libs/backend/e-commerce/jest.config.ts",
         "passWithNoTests": true
       }
     }

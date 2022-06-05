@@ -20,6 +20,7 @@
       "@go-shule/backend/core": ["libs/backend/core/src/index.ts"],
       "@go-shule/backend/decorators": ["libs/backend/decorators/src/index.ts"],
       "@go-shule/backend/dtos": ["libs/backend/dtos/src/index.ts"],
+      "@go-shule/backend/e-commerce": ["libs/backend/e-commerce/src/index.ts"],
       "@go-shule/backend/entities": ["libs/backend/entities/src/index.ts"],
       "@go-shule/backend/enums": ["libs/backend/enums/src/index.ts"],
       "@go-shule/backend/payments": ["libs/backend/payments/src/index.ts"],

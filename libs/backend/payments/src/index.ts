@@ -1,1 +1,1 @@
-export * from './lib/backend-payments.module';
+export * from './lib';

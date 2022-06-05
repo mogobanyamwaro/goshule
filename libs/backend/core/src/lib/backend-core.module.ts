@@ -1,6 +1,5 @@
 import { BackendAuthModule } from '@go-shule/backend/auth';
 import { BackendPaymentsModule } from '@go-shule/backend/payments';
-import { BackendProductsModule } from '@go-shule/backend/products';
 import {
   BackendSharedModule,
   DbValidatorsModule,
@@ -35,8 +34,8 @@ import { getMetadataArgsStorage } from 'typeorm';
     }),
     BackendUsersModule,
     BackendAuthModule,
-    BackendProductsModule,
     BackendSharedModule,
+    BackendPaymentsModule,
   ],
   controllers: [],
   providers: [],

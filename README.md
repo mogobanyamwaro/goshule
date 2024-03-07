@@ -1,94 +1,75 @@
+# Kenya School Directory
 
+Welcome to Kenya School Directory! This platform serves as a comprehensive database of both public and private schools across Kenya. Whether you're a parent, student, or education professional, make informed decisions about education by accessing our repository of schools.
 
-# GoShule
+## Table of Contents
 
-This project was generated using [Nx](https://nx.dev).
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+## Features
 
-🔎 **Smart, Fast and Extensible Build System**
+- Search and browse through a vast collection of public and private schools in Kenya
+- Access detailed information about each school, including location, contact details, facilities, and more
+- Make informed decisions about education by comparing schools based on various criteria
+- Purchase school-related products directly through the platform for each school listed
 
-## Adding capabilities to your workspace
+## Installation
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+1. Clone the repository:
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+```bash
+git clone https://github.com/yourusername/kenya-school-directory.git
+```
 
-Below are our core plugins:
+2. Navigate into the project directory:
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+```bash
+cd kenya-school-directory
+```
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+3. Install dependencies:
 
-## Generate an application
+```bash
+npm install
+```
 
-Run `nx g @nrwl/react:app my-app` to generate an application.
+4. Set up the environment variables:
 
-> You can use any of the plugins above to generate applications as well.
+Create a `.env` file in the root directory and add any necessary variables.
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+5. Start the development server:
 
-## Generate a library
+```bash
+npm start
+```
 
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
+6. Open the application in your web browser:
 
-> You can also use any of the plugins above to generate libraries as well.
+Access the Kenya School Directory application at `http://localhost:3000` in your preferred web browser.
 
-Libraries are shareable across libraries and applications. They can be imported from `@go-shule/mylib`.
+## Usage
 
-## Development server
+Once the application is running, use the search functionality to find schools by name, location, or other criteria. Browse through the list of schools, view detailed information about each school, and make purchases for school-related products directly through the platform.
 
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- React.js
+- TypeScript
+- GraphQL
+- Node.js
+- Express.js
+- MongoDB
+- Tailwind CSS
 
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+## Contributing
 
-## Build
+Contributions are welcome! Please fork the repository and create a pull request with your enhancements.
 
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## License
 
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+This project is licensed under the [MIT License](LICENSE).
